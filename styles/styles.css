@@ -1,0 +1,196 @@
+/*import font*/
+@font-face {
+  font-family: 'FreePixel';
+  src: url('/FreePixel.ttf');
+}
+
+/*main*/
+body {
+    background-color: #f2ffb5;
+    font-family: FreePixel, Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #ffffff;
+    border: 4px double #407645;
+}
+
+body h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+  color: #407645;
+  text-shadow: 1px 2px 2px rgba(102, 102, 102, 0.2);
+  text-decoration: underline;
+  text-decoration-style:wavy;
+  margin-bottom: -15px;
+  margin-top: 25px;
+  padding-top: 45px;
+  
+}
+
+body img {
+  margin-left: 40px;
+  margin-top: -40px;
+  position: absolute;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+body img:hover {
+  opacity: 1;
+}
+
+body nav ul {
+  font-size: 24px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  background-color: #c3e7b7;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  box-shadow: 0 6px 10px rgba(154, 188, 124, 0.409);
+}
+
+body nav ul li a {
+  color:#407645;
+  margin-right: 35px;
+  text-decoration:  none;
+  opacity: 0.75;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+  text-decoration:line-through;
+}
+
+footer {
+  color:#407645;
+  text-align: center;
+}
+
+
+
+/*CLASSES*/
+
+.mirror { /*mirror the logo onto the other corner*/
+  position: absolute;
+  top: 38px; 
+  right: 40px; 
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.mainContainer { /*hold the main*/
+  display: flex;
+  margin-bottom: -30px;
+}
+
+.story {
+  margin-left: 40px;
+  margin-top: 48px;
+  max-width: 200px;
+  padding: 25px;
+  padding-top: 1px;
+  padding-bottom: 8px;
+  background-color:#407645;
+  font-size: larger;
+  border-radius: 7px;
+  box-shadow: 0 3px 7px rgba(178, 167, 172, 0.3);
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item { /*hold the item details*/
+  border-radius: 9px;
+  padding-top: 50px;
+  padding-left: 10px;
+  color: #407645;
+  justify-content: center;
+  margin-left: 145px;
+  margin-top: 50px;
+  width: 800px;
+  height: 300px;
+  font-size: 20px;
+}
+
+.item img {
+  margin-left:-10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.item-details {
+  margin-left: 300px;
+}
+
+.item h3 {
+  margin: 0;
+}
+
+.item .price {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.item .description {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.link {
+  color:#407645;
+  text-decoration: none;
+}
+
+/*CONTACT PAGE*/
+
+.contactForm {
+  background-color: #c3e7b7;
+  text-align: center;
+  color: #407645;
+  margin-top: 80px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  outline: dotted;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}
+
+.contactForm button {
+  font-family: FreePixel, Arial, Helvetica, sans-serif;
+  color:#ffffff;
+  background-color:#407645;
+  border-radius: 48px;
+  border-color: #ffffff;
+}
+
+.contactForm input {
+  font-family: FreePixel, Arial, Helvetica, sans-serif;
+  color:black;
+  border-radius: 24px;
+  border-color: #ffffff;
+} 
+
+.contactForm textarea {
+  font-family: FreePixel, Arial, Helvetica, sans-serif;
+  color:black;
+  width: 360px;
+  height: 120px;
+  border-radius: 12px;
+  border-color: #407645;
+  margin-bottom: -12px;
+  max-width: 700px;
+} 
+
+.contactForm h2 {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3px;
+  text-decoration: underline;
+}
